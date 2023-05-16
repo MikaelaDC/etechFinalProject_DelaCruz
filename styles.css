@@ -1,18 +1,76 @@
-body {
-    height: 2000px;
-    overflow-x: hidden;
+@font-face {
+    font-family: 'Aesthetic';
+    src: url(Fonts/Aesthetic-Regular.ttf);
 }
 
-.bg-img {
+@font-face {
+    font-family: 'DIN';
+    src: url(Fonts/DIN.ttf);
+}
+
+body {
+    height: 500px;
+    overflow-x: hidden;
+    background-color: transparent;
+}
+
+.bg-image {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-    filter: brightness(0.5);
     position: absolute;
     top: 0;
     left: 0;
+    filter: brightness(0.5);
+    background-repeat: repeat;
 }
 
 .container {
-    margin-top: 1100px;
+    margin-left: 5%;
+   
 }
+
+.card {
+
+    display: inline-block;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    color: aliceblue;
+}
+
+
+.card1 {
+    margin-top: 13px;
+    margin-left: 0%;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
